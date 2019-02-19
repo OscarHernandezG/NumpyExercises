@@ -51,7 +51,7 @@ if __name__ == '__main__':
 
 #    print(mat55)
 
-    randomArray = np.random.randint(0, 10, 9).reshape(3, 3)
+    randomArray = np.float64(np.random.randint(0, 10, 9).reshape(3, 3))
 
     print(randomArray)
 
