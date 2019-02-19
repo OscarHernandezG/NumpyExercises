@@ -21,5 +21,9 @@ if __name__ == '__main__':
 
     matrix = np.flip(matrix, 0)
 
-    print(matrix)
+#   print(matrix)
+
+    identity = np.eye(3)
+
+    print(identity)
 
