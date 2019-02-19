@@ -29,5 +29,12 @@ if __name__ == '__main__':
 
     randomMat = np.random.random((3, 3))
 
-    print(randomMat)
+#    print(randomMat)
+
+    randomVec = np.random.randint(0, 10, 10)
+    average = randomVec.mean()
+
+    print(randomVec)
+    print(average)
+
 
