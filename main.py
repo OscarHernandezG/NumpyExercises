@@ -49,5 +49,10 @@ if __name__ == '__main__':
     mat55 = np.zeros((5, 5))
     mat55[:] = np.matrix(np.arange(1, 6))
 
-    print(mat55)
+#    print(mat55)
+
+    randomArray = np.random.randint(0, 10, 9).reshape(3, 3)
+
+    print(randomArray)
+
 
