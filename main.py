@@ -59,6 +59,13 @@ if __name__ == '__main__':
 
     randomArray2 = np.subtract(randomArray2, np.mean(randomArray2))
 
-    print(randomArray2)
+#    print(randomArray2)
+
+    randomArray3 = np.random.randint(0, 100, 25).reshape(5, 5)
+
+    for i in range(0, 5):
+        randomArray3[i, :] = np.subtract(randomArray3[i, :], np.mean(randomArray3[i, :]))
+
+    print(randomArray3)
 
 
