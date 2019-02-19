@@ -25,5 +25,9 @@ if __name__ == '__main__':
 
     identity = np.eye(3)
 
-    print(identity)
+#    print(identity)
+
+    randomMat = np.random.random((3, 3))
+
+    print(randomMat)
 
