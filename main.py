@@ -19,7 +19,7 @@ if __name__ == '__main__':
 
     matrix = np.array(np.arange(1, 10)).reshape(3, 3)
 
-    matrix = np.flip(matrix, 1)
+    matrix = np.flip(matrix, 0)
 
     print(matrix)
 
