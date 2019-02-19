@@ -34,7 +34,15 @@ if __name__ == '__main__':
     randomVec = np.random.randint(0, 10, 10)
     average = randomVec.mean()
 
-    print(randomVec)
-    print(average)
+#    print(randomVec)
+#    print(average)
 
+    mat01 = np.zeros((10, 10))
+
+    mat01[0, :] = 1
+    mat01[9, :] = 1
+    mat01[:, 9] = 1
+    mat01[:, 0] = 1
+
+    print(mat01)
 
