@@ -66,6 +66,14 @@ if __name__ == '__main__':
     for i in range(0, 5):
         randomArray3[i, :] = np.subtract(randomArray3[i, :], np.mean(randomArray3[i, :]))
 
-    print(randomArray3)
+#    print(randomArray3)
 
+    randomMat2 = np.random.random((5, 5))
+
+    idx = (np.abs(randomMat2 - 0.5)).argmin()
+    x = int(idx / 5)
+    y = int(idx % 5)
+    closestValue = randomMat2[x, y]
+
+    print(closestValue)
 
