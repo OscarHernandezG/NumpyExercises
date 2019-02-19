@@ -44,5 +44,10 @@ if __name__ == '__main__':
     mat01[:, 9] = 1
     mat01[:, 0] = 1
 
-    print(mat01)
+#    print(mat01)
+
+    mat55 = np.zeros((5, 5))
+    mat55[:] = np.matrix(np.arange(1, 6))
+
+    print(mat55)
 
