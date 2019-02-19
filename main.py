@@ -15,4 +15,9 @@ if __name__ == '__main__':
 
     intVector = np.arange(10, 50)
 
-    print(intVector)
+#    print(intVector)
+
+    matrix = np.array(np.arange(1, 10)).reshape(3, 3)
+
+    print(matrix)
+
