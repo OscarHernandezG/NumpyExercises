@@ -53,6 +53,12 @@ if __name__ == '__main__':
 
     randomArray = np.float64(np.random.randint(0, 10, 9).reshape(3, 3))
 
-    print(randomArray)
+#    print(randomArray)
+
+    randomArray2 = np.random.randint(0, 100, 25).reshape(5, 5)
+
+    randomArray2 = np.subtract(randomArray2, np.mean(randomArray2))
+
+    print(randomArray2)
 
 
