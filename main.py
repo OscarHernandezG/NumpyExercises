@@ -89,7 +89,8 @@ if __name__ == '__main__':
     line = np.arange(0, 255, 256/64, np.uint8)
 
     image[:] = line
-
+    image = np.transpose(image)
+    
     cv2.imshow("image", image)
     cv2.waitKey(0)
 
