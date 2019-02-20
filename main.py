@@ -1,5 +1,5 @@
 import numpy as np
-
+import cv2
 
 
 if __name__ == '__main__':
@@ -81,5 +81,15 @@ if __name__ == '__main__':
 
     greater = randomMat3[randomMat3 > 5]
 
-    print(np.size(greater))
+#    print(np.size(greater))
+
+
+    image = np.zeros((64, 64), np.uint8)
+
+    line = np.arange(0, 255, 256/64, np.uint8)
+
+    image[:] = line
+
+    cv2.imshow("image", image)
+    cv2.waitKey(0)
 
