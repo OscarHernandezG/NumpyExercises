@@ -75,5 +75,11 @@ if __name__ == '__main__':
     y = int(idx % 5)
     closestValue = randomMat2[x, y]
 
-    print(closestValue)
+#    print(closestValue)
+
+    randomMat3 = np.random.randint(0, 10, 9).reshape(3, 3)
+
+    greater = randomMat3[randomMat3 > 5]
+
+    print(np.size(greater))
 
